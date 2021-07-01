@@ -14,7 +14,7 @@
     "test:tsc": "tsc --noEmit"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^0.0.13",
+    "@casper124578/eslint-config": "^0.0.14",
     "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
