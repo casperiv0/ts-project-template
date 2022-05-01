@@ -14,10 +14,10 @@
     "test:tsc": "tsc --noEmit"
   },
   "devDependencies": {
-    "@casper124578/eslint-config": "^4.1.0",
-    "eslint": "^8.10.0",
-    "prettier": "^2.5.1",
-    "typescript": "^4.6.2"
+    "@casper124578/eslint-config": "^4.3.0",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
   },
   "prettier": {
     "semi": true,
