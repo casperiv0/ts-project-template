@@ -1,16 +1,13 @@
-name: Lint
+name: CI (Typecheck, Lint, Test)
 
 on: [push, pull_request]
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
+      - uses: actions/checkout@v3
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
@@ -25,8 +22,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run ESLint check
+      - name: Linting check
         run: pnpm run lint
 
-      - name: Run Prettier check
-        run: pnpm run prettier:check
+      - name: Prettier check
+        run: pnpm run prettier
+
+      - name: Typecheck app
+        run: pnpm run typecheck
+
+      - name: Test app
+        run: pnpm run test

@@ -2,7 +2,7 @@
 
 A simple TypeScript project template with ESLint, prettier and GitHub actions
 
-## npm scripts
+## pnpm scripts
 
 - `format`: formats the code using Prettier
 - `lint`: checks for lint errors using ESLint
