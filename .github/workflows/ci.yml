@@ -26,7 +26,7 @@ jobs:
         run: pnpm run lint
 
       - name: Prettier check
-        run: pnpm run prettier
+        run: pnpm run prettier:check
 
       - name: Typecheck app
         run: pnpm run typecheck
